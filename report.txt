@@ -1,0 +1,68 @@
+a.
+i) Problem definition:
+producer-consumer problem using bounded
+buffer whose size is 10. (this means the buffer only can store 10 messages.) For this, there will
+be one program creating two threads (one for producer and the other for consumer) which act as
+different processes. After 15 seconds of running, the program (both producer and consumer
+threads) should be terminated gracefully without any error.
+
+ii)Proposed solution:
+
+Producer
+1. Check if Buffer is full or not. If full, then wait() for buffer items to get consumed.
+
+2. Generate data and put it into Buffer.
+
+3. Notify Consumer that Data has been placed into Buffer.
+
+4. Repeat step 1-3
+
+Consumer
+1. Check if Buffer has items. If empty, then wait() for buffer to get filled.
+
+2. Consume data from Buffer.
+
+3. Notify Producer that Data has been consumed from Buffer
+
+4. Repear step 1-3
+
+Mian 
+
+1.Create ArrayBlockingQueue which will store messages
+
+2.Create producer and consumer thread and pass ArrayBlockingQueue as argument
+
+3.Start the threads
+
+
+b) Results :
+
+Producer
+“current time”, Placing 0 in the buffer location 0.
+“current time”, Placing 1 in the buffer location 1.
+“current time”, Placing 2 in the buffer location 2.
+…
+“current time”, Placing 9 in the buffer location 9.
+“current time”, Placing 10 in the buffer location 0.
+“current time”, Placing 11 in the buffer location 1.
+…
+“current time”, Placing 14 in the buffer location 4.
+“current time”, Placing 0 in the buffer location 5.
+“current time”, Placing 1 in the buffer location 6.
+“current time”, Placing 2 in the buffer location 7.
+
+Consumer
+“current time”, Consuming 0 from the buffer location 0.
+“current time”, Consuming 1 from the buffer location 1.
+“current time”, Consuming 2 from the buffer location 2.
+…
+“current time”, Consuming 9 from the buffer location 9.
+“current time”, Consuming 10 from the buffer location 0.
+“current time”, Consuming 11 from the buffer location 1.
+…
+“current time”, Consuming 14 from the buffer location 4.
+“current time”, Consuming 0 from the buffer location 5.
+“current time”, Consuming 1 from the buffer location 6.
+“current time”, Consuming 2 from the buffer location 7.
+
+c) No Bugs

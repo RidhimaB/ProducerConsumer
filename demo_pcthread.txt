@@ -1,0 +1,215 @@
+1.Theare are three classes
+  MyConsumer
+MyProducer
+Producerconsumer
+
+
+
+2.
+You have to open Producerconsumer class
+This is main class where you can execute the applicaiton
+and you can find the comments on every method  bcz for comments and stylish code they give 5%
+
+for report 20%
+for smooth execution 75%
+
+i have covered all the things let me show you
+keep your name
+
+
+Here two threads 
+1.Producer 
+2.Consumer
+
+As per the document
+let me open
+
+You have to maintain buffer size 10
+it means You have to create BlockingQueue Object which will have size 10
+it can store only 10 msgs
+every time producer store one msg
+consumer consume the msg form buffer
+
+it happens till 15 sec of execution
+
+once buffer size reach 10 then producer wil not store msg in buffer
+it watis for consumer randomly
+
+max ineter size 14 it means it has to start 0-14 then repeats
+
+
+producer-consumer problem using bounded
+buffer whose size is 10.
+
+
+int bufferSize=10;
+	    int waitingPeriodMin=10;
+	    int waitingPeriodMax=100;
+	    int max_terminationTime=15;
+	    int max_generates_integers=14;
+	    String logPath = "D:";
+
+above values are configured dynamically it means
+in progream did not hardcode any where
+
+
+this is called sytylish program
+
+if you do not have D:/ drive then change accordingly
+and while giving to college we have to remove Sysout's
+
+if you want to check out put conole then make uncomment
+
+finally we have to submit
+
+1.Program
+2.report
+have to make zip file
+
+if you need you can keep sample output files
+like producer.txt ,consumer.txt files 
+
+
+let me show you report.txt
+
+in report if you want you can add if you have points or you want to elebrate more
+
+
+
+Plz make sure zip shuold have only source code and report
+
+yu have to share that zip only
+before share plz make sure
+Drive 
+
+in local you have D:/ but in college you may or may not 
+plz check with them once and change accordingly
+
+
+i give you eclipse project and zip file
+
+just run the program and try to undrstand the code
+
+do you have any doubts
+
+you have access you can type here
+bhaiya i didnt know that
+
+the drive i will change to C is that okay?
+
+yes
+you can keep any driver
+better make c bcz every system wil have C
+but some times C drive will not have permison to write files 
+
+
+so  we have to make sure that one
+
+and next i have to enter my name i
+
+n type here u r name i wil add
+
+Ridhima
+
+done
+
+I dont have any doubts bhaiya it is clear explanation
+ok cool
+
+Thank u amazing class
+lol
+haha!
+
+
+bhlet aya i want this saved as well to review what u told
+
+ok let me send all
+
+
+what is the your project name
+same name keep to your zip and append your stduent num or something
+
+Just ridhima programming project
+
+
+
+let me show how to take project in eclipse
+create a Java Prject thjen finish it
+
+you can find src folder 
+just paste all java files only
+
+on porgram 
+right click
+if you want to see console out put just uncomment sysout
+
+that's it
+
+
+if you do not have eclipse in u r College but you want to run the program then 
+
+you have to choose command promt only
+
+bhaiya u told that while submitting i should remove sysout right?
+
+
+but if they askyou to execute 
+if you execute the program then only prducer.txt and consumer.txt files only will generate into log path
+
+okay bhaiya i will keep sysout
+but while submiting remove it
+then it geneates producer.txt file and consumer.txt file it will not have console out put
+if you keep sysout you will get three 
+producer.txt and conusmer.txt and console out put
+
+
+
+let me show you how to run applicaiton from commandpromt
+
+place all three java files into one folder
+
+if you install java then you can run from command promt
+
+you can check it whether java installed or not
+
+
+just type java command you can see like out put if you do not have you can't see any thing
+then download java and install it
+
+i have java installed bhaiya
+ok cool
+
+Steps to run program from command promt
+
+1.Place all files into one folder
+2.Complie all three java files
+        javac <javafile name>
+
+D:\PCProbram>javac MyConsumer.java
+
+D:\PCProbram>javac MyProducer.java
+
+D:\PCProbram>javac ProducerConsumer.java
+
+then run the program (do not keep .java extension)
+
+3. java ProducerConsumer
+
+if you do not keep sysout you can see only 
+D:\PCProbram>java ProducerConsumer
+Process Starting ..1460048862457
+Total Processed Time :15 Sec
+
+and two files will be generated
+
+if you keep sysout you can console out and two files will be generated
+
+clear ?
+
+yes
+
+i will send mail 
+
+
+
+
